@@ -1,6 +1,6 @@
 # Install Node.js in IBM Cloud
 
-This documentation will guide you on how to install Node.js on the IBM Cloud using the Kubernetes Service. Simple and effective so you can start programming with it.
+Are you looking to start programming or use your Node.js applications in the IBM Cloud? This documentation will guide you on how to install Node.js on the IBM Cloud using the Kubernetes Service.
 
 ## Pre-requisites
 
@@ -75,7 +75,7 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 
 * Go to *Resources List* in the Left Navigation Menu and click on *Kubernetes*.
 
-![Screenshot](test11.png)
+![Screenshot](test1.png)
 
 * Click the *Actions* button and select *Web terminal*.
 
@@ -85,33 +85,33 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 
 ![Screenshot](test3.PNG)
 
-* Once you have installed the terminal, click on the action button again, select web terminal, and type the following command. It will show you the workspaces of your cluster. You can see *node-example* is now active.
+* Once you have installed the terminal, open it, and type the following command. It will show you the workspaces of your cluster. You can see *node-example* is now active.
 
 `$ kubectl get ns`
 
-![Screenshot](test4.PNG)
+![Screenshot](nodetest1.PNG)
 
 * You can then obtain more data about the service and it's pods.
 
 `$ kubectl get pod -n NAMESERVICE -o wide`
 
-![Screenshot](test5.PNG)
+![Screenshot](nodetest2.PNG)
 
 `$ kubectl get service -n NAME SERVICE`
 
-![Screenshot](test6.PNG)
+![Screenshot](nodetest3.PNG)
 
 * Select the pod within your service using bash.
 
 `$ kubectl exec --stdin --tty PODNAME -n NAMESPACE -- /bin/bash`
 
-![Screenshot](test8.PNG)
+![Screenshot](nodetest4.PNG)
 
-* And finally, check if Node.js is correctly installed checking its version and it's main commands by simply type 'node':
+* And finally, check if Node.js is correctly installed checking its version and its main commands by typing 'node'. You can also use your regular Node.js commands to start operating with it.
 
 `$ node`
 
-![Screenshot](test9.PNG)
+![Screenshot](nodetest5.PNG)
 
 You have finished the installation, enjoy your Node.js installation!
 
